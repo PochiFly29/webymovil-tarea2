@@ -32,6 +32,7 @@ import '@ionic/react/css/palettes/dark.system.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import PostsPage from './pages/PostsPage';
 
 setupIonicReact();
 
@@ -39,8 +40,7 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Navigate to="/home" replace />} />
+        <Route path="/home" element={<PostsPage />} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
