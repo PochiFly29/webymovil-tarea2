@@ -41,6 +41,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route path="/home" element={<PostsPage />} />
+        <Route path="/" element={<Navigate to="/home" />} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
